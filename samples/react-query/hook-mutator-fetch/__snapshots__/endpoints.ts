@@ -25,7 +25,7 @@ import type {
   PetsNestedArray,
 } from './models';
 
-import { useCustomFetch } from './use-custom-instance';
+import { useCustomFetch } from '../use-custom-instance';
 type AwaitedInput<T> = PromiseLike<T> | T;
 
 type Awaited<O> = O extends AwaitedInput<infer T> ? T : never;

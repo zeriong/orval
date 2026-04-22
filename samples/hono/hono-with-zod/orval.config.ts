@@ -4,8 +4,9 @@ export default defineConfig({
   petstore: {
     output: {
       mode: 'split',
-      target: 'src/petstore.ts',
+      target: 'src/gen/petstore.ts',
       client: 'hono',
+      clean: true,
       formatter: 'prettier',
       override: {
         hono: {

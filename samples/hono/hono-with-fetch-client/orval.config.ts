@@ -23,7 +23,8 @@ export default defineConfig({
     output: {
       mode: 'split',
       client: 'hono',
-      target: 'hono-app/src/petstore.ts',
+      target: 'hono-app/src/gen/petstore.ts',
+      clean: true,
       formatter: 'prettier',
       override: {
         hono: {

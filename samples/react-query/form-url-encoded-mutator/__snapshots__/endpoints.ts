@@ -25,8 +25,8 @@ import type {
   PetsNestedArray,
 } from './models';
 
-import { customInstance } from './custom-instance';
-import { customFormUrlEncoded } from './custom-form-url-encoded';
+import { customInstance } from '../custom-instance';
+import { customFormUrlEncoded } from '../custom-form-url-encoded';
 type AwaitedInput<T> = PromiseLike<T> | T;
 
 type Awaited<O> = O extends AwaitedInput<infer T> ? T : never;

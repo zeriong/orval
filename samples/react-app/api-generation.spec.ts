@@ -4,6 +4,14 @@ import { describeApiGenerationSnapshots } from '../../test-utils/snapshot-testin
 await describeApiGenerationSnapshots({
   dirs: [
     path.resolve(import.meta.dirname, 'src', 'api', 'endpoints'),
+    path.resolve(import.meta.dirname, 'src', 'api', 'endpoints-docs-markdown'),
+    path.resolve(import.meta.dirname, 'src', 'api', 'endpoints-docs-html'),
+    path.resolve(
+      import.meta.dirname,
+      'src',
+      'api',
+      'endpoints-docs-html-plugin',
+    ),
     path.resolve(import.meta.dirname, 'src', 'api', 'model'),
   ],
   snapshotsDir: path.resolve(import.meta.dirname, '__snapshots__'),

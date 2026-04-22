@@ -5,7 +5,7 @@
  * OpenAPI spec version: 1.0.0
  */
 import { z as zod } from 'zod';
-import { stripNill } from './mutators';
+import { stripNill } from '../mutators';
 
 export const ListPetsQueryParams = zod.object({
   limit: zod

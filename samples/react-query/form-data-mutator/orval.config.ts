@@ -3,9 +3,10 @@ import { defineConfig } from 'orval';
 export default defineConfig({
   petstore: {
     output: {
-      target: './endpoints.ts',
-      schemas: './models',
+      target: './gen/endpoints.ts',
+      schemas: './gen/models',
       client: 'react-query',
+      clean: true,
       formatter: 'prettier',
       override: {
         mutator: {

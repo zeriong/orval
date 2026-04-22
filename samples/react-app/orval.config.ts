@@ -8,6 +8,7 @@ export default defineConfig({
       target: 'src/api/endpoints/petstoreFromFileSpecWithTransformer.ts',
       schemas: 'src/api/model',
       mock: true,
+      clean: true,
       formatter: 'prettier',
       override: {
         mutator: {
@@ -54,7 +55,9 @@ export default defineConfig({
   'petstore-file-with-docs-markdown': {
     input: './petstore.yaml',
     output: {
-      target: 'src/api/endpoints/petstoreFromFileSpecWithDocsMarkdown.ts',
+      target:
+        'src/api/endpoints-docs-markdown/petstoreFromFileSpecWithDocsMarkdown.ts',
+      clean: true,
       formatter: 'prettier',
       docs: {
         out: './docs-markdown',
@@ -65,7 +68,8 @@ export default defineConfig({
   'petstore-file-with-docs-html': {
     input: './petstore.yaml',
     output: {
-      target: 'src/api/endpoints/petstoreFromFileSpecWithDocsHtml.ts',
+      target: 'src/api/endpoints-docs-html/petstoreFromFileSpecWithDocsHtml.ts',
+      clean: true,
       formatter: 'prettier',
       docs: {
         theme: 'default',
@@ -77,7 +81,9 @@ export default defineConfig({
   'petstore-file-with-docs-options-plugin': {
     input: './petstore.yaml',
     output: {
-      target: 'src/api/endpoints/petstoreFromFileSpecWithDocsHtmlPlugin.ts',
+      target:
+        'src/api/endpoints-docs-html-plugin/petstoreFromFileSpecWithDocsHtmlPlugin.ts',
+      clean: true,
       formatter: 'prettier',
       docs: {
         theme: 'default',
